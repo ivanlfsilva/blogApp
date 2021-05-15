@@ -1,0 +1,26 @@
+<h3>Editar Categoria:</h3>
+<div class="card">
+  <div class="card-body">
+    <form action="/admin/categorias/nova" method="post">
+      <label for="nome">Nome da categoria:</label>
+      <input
+        id="nome"
+        name="nome"
+        placeholder="nome da categoria"
+        class="form-control"
+        value="{{categoria.nome}}"
+      />
+      <label for="slug">Slug:</label>
+      <input
+        type="text"
+        id="slug"
+        name="slug"
+        placeholder="slug da categoria"
+        class="form-control"
+        value="{{categoria.slug}}"
+      />
+      <br />
+      <button type="submit" class="btn btn-success">Editar categoria</button>
+    </form>
+  </div>
+</div>
